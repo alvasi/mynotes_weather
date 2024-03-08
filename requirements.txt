@@ -10,3 +10,4 @@ packaging==23.2
 pathspec==0.12.1
 platformdirs==4.2.0
 Werkzeug==3.0.1
+requests==2.25.1
