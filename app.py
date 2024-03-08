@@ -24,5 +24,16 @@ def current_weather():
     return jsonify(temperature=temperature, weather_description=weather_description)
 
 
+# @app.route("/forecast", methods=["GET"])
+# def forecast():
+#     city = request.args.get("city")
+#     days = request.args.get("days")
+#     response = requests.get(f"{BASE_URL}forecast?access_key={API_KEY}&query={city}&forecast_days={days}&hourly=0")
+#     if not response.ok:
+#         return None, "Error fetching weather data"
+#     weather_data = response.json()
+#     return jsonify(weather_data)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
